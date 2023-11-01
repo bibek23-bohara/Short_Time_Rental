@@ -1,0 +1,122 @@
+{% load static %}
+
+<div class="app-menu navbar-menu">
+    <!-- LOGO -->
+    <div class="navbar-brand-box">
+        <a href="dashboard-real-estate.html" class="logo logo-dark">
+            <span class="logo-sm">
+                <img src="assets/images/logo-sm.png" alt="" height="22">
+            </span>
+            <span class="logo-lg">
+                <img src="assets/images/logo-dark.png" alt="" height="22">
+            </span>
+        </a>
+        <a href="dashboard-real-estate.html" class="logo logo-light">
+            <span class="logo-sm">
+                <img src="assets/images/logo-sm.png" alt="" height="22">
+            </span>
+            <span class="logo-lg">
+                <img src="assets/images/logo-light.png" alt="" height="22">
+            </span>
+        </a>
+        <button type="button" class="btn btn-sm p-0 fs-3xl header-item float-end btn-vertical-sm-hover" id="vertical-hover">
+            <i class="ri-record-circle-line"></i>
+        </button>
+    </div>
+
+    <div id="scrollbar">
+        <div class="container-fluid">
+
+            <div id="two-column-menu">
+            </div>
+            <ul class="navbar-nav" id="navbar-nav">
+
+                <li class="menu-title"><span data-key="t-menu">Menu</span></li>
+                <li class="nav-item">
+                    <a class="nav-link menu-link collapsed" href="dashboard-real-estate.html"  role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                        <i class="ph-gauge"></i> <span data-key="t-dashboards">Dashboards</span>
+                    </a>                </li>
+                    <li class="nav-item">
+                        <a href="#sidebarAgent" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAgent" data-key="t-agent"> Room Seekers </a>
+                        <div class="collapse menu-dropdown" id="sidebarAgent">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="apps-real-estate-agent-list.html" class="nav-link" data-key="t-list-view"> List View </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="apps-real-estate-agent-grid.html" class="nav-link" data-key="t-grid-view"> Grid View </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="apps-real-estate-agent-overview.html" class="nav-link" data-key="t-overview"> Overview </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sidebarAgencies" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAgencies" data-key="t-agencies"> House Owners </a>
+                        <div class="collapse menu-dropdown" id="sidebarAgencies">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="apps-real-estate-agencies-list.html" class="nav-link" data-key="t-list-view"> List View </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="apps-real-estate-agencies-overview.html" class="nav-link" data-key="t-overview"> Overview </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sidebarInvoices" class="nav-link menu-link collapsed" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarInvoices">
+                            <i class="ph-file-text"></i> <span data-key="t-invoices">Invoices</span>
+                        </a>
+                        <div class="collapse menu-dropdown" id="sidebarInvoices">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="apps-invoices-list.html" class="nav-link" data-key="t-list-view">List View</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="apps-invoices-overview.html" class="nav-link" data-key="t-overview">Overview</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="apps-invoices-create.html" class="nav-link" data-key="t-create-invoice">Create Invoice</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sidebarProperty" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarProperty" data-key="t-agent">Property</a>             
+                    <div class="collapse menu-dropdown" id="sidebarProperty">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="apps-real-estate-list.html" class="nav-link" data-key="t-listing-list">Property List</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="apps-real-estate-add-properties.html" class="nav-link" data-key="t-add-property">Add Property</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="pages-pricing.html" class="nav-link" data-key="t-pricing"> Pricing </a>
+                </li>
+                <li class="nav-item">
+                    <a href="apps-real-estate-earnings.html" class="nav-link" data-key="t-earnings">Earnings</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages-faqs.html" class="nav-link" data-key="t-faqs"> FAQs </a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages-privacy-policy.html" class="nav-link" data-key="t-privacy-policy"> Privacy Policy </a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages-term-conditions.html" class="nav-link" data-key="t-term-conditions"> Term & Conditions </a>
+                </li>
+                <li class="nav-item">
+                    <a href="apps-file-manager.html" class="nav-link menu-link"> <i class="ph-folder-open"></i> <span data-key="t-file-manager">File Manager</span> </a>
+            </ul>
+        </div>
+        <!-- Sidebar -->
+    </div>
+
+    <div class="sidebar-background"></div>
+</div>
